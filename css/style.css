@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+
+.wrapper {
+    min-height: 100%;
+
+}
+
+.victory {
+    height: 100vh;
+    background-image: url(../img/banner-may-9-military-st-george-ribbon-flowers-space-text-great-victory-day_321377-770.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 5px;
+
+}
+
+.nav {
+    color: black;
+    padding-top: 10px;
+}
+
+.nav__list {
+    
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 25px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__list a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+.nav__list a:hover{
+    color: red;
+}
+
+.nav__link {
+    flex: none;
+    scroll-snap-align: start;
+    width: 300px;
+    text-align: center;
+}
+
+
+.title {
+    font-weight: 80;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 30px;
+    width: 1170px;
+    font-size: 1.5rem;
+}
+
+.victory__img {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.victory__img-wrap {
+    border-radius: 20px;
+    height: 432px;
+}
+
+
+.hero__title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.hero__info{
+    position: relative;
+    overflow: hidden;
+}
+.heroes-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.heroes-list__item {
+    margin-bottom: 30px;
+}
+
+.hero__photo {
+    width: 300px;
+    height: 400px;
+}
+.hero__name {
+    text-align: center;
+}
+
+.hero__description {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255,255,255,0.4);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+.hero:hover .hero__description {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.events__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events__content {
+    box-shadow: inset #fff 288px 0px 0px 0px, inset #000 291px 0px 0px 0px;
+    width: 600px;
+    margin: 0px auto;
+}
+.events__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.event__date {
+    flex: 1;  
+    text-align: right;
+}
+.event__dot {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.event__title {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: #000 0px 2px 3px -1px;
+    flex: 1;
+    
+}
+
+.machines {
+    height: 100vh;
+    background: url(../img/first-day-of-war.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+
+.machines__title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.machines__block {
+    position: relative;
+}
+.machine__block {
+    position: absolute;
+    width: 230px;
+    height: 100px;
+    border: 1px solid #000;
+    background:  rgba(255,255,255,0.4);
+    right: 25%;
+}
+.car__title {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.car__subtitle {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
+.car__block {
+    position: absolute;
+    width: 230px;
+    height: 100px;
+    border: 1px solid #000;
+    background:  rgba(255,255,255,0.4);
+    right: 50%;
+    top: 320px;
+}
+.machin__block {
+    position: absolute;
+    width: 230px;
+    height: 100px;
+    border: 1px solid #000;
+    background: #fff;
+    right: 3%;
+    top: 300px;
+    background:  rgba(255,255,255,0.4);
+}
